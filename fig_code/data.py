@@ -17,4 +17,11 @@ def linear_data_sample_big_errs(N=40, rseed=0, m=3, b=-2):
     x = 10 * rng.rand(N)
     dy = m / 2 * (1 + rng.rand(N))
     dy[20:25] *= 10
-    y = m * x + b + dy * rn
+    y = m * x + b + dy * rng.randn(N)
+
+    return (x, y, dy)
+
+
+def sample_light_curve(phased=True):
+    from astroML.datasets import fetch_LINEAR_sample
+    data = fetch_LINE
