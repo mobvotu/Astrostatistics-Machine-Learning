@@ -31,4 +31,9 @@ def sample_light_curve(phased=True):
         P_best = 0.580313015651
         t /= P_best
 
-    return (t, y,
+    return (t, y, dy)
+    
+
+def sample_light_curve_2(phased=True):
+    from astroML.datasets import fetch_LINEAR_sample
+    data = fetch_LINEAR_samp
