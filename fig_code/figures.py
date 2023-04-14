@@ -19,4 +19,7 @@ def plot_example_decision_tree():
     ax = fig.add_axes([0, 0, 0.8, 1], frameon=False, xticks=[], yticks=[])
     ax.set_title('Example Decision Tree: Animal Classification', size=24)
 
-    def text(ax, x, y, t,
+    def text(ax, x, y, t, size=20, **kwargs):
+        ax.text(x, y, t,
+                ha='center', va='center', size=size,
+                bbox=dict(boxstyle='ro
