@@ -16,4 +16,7 @@ def plot_venn_diagram():
 
 def plot_example_decision_tree():
     fig = plt.figure(figsize=(10, 4))
-    ax = fig.add_axes([0, 0, 0.8, 1], frameon=False
+    ax = fig.add_axes([0, 0, 0.8, 1], frameon=False, xticks=[], yticks=[])
+    ax.set_title('Example Decision Tree: Animal Classification', size=24)
+
+    def text(ax, x, y, t,
