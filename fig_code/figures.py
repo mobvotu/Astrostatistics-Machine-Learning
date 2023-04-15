@@ -22,4 +22,8 @@ def plot_example_decision_tree():
     def text(ax, x, y, t, size=20, **kwargs):
         ax.text(x, y, t,
                 ha='center', va='center', size=size,
-                bbox=dict(boxstyle='ro
+                bbox=dict(boxstyle='round', ec='k', fc='w'), **kwargs)
+
+    text(ax, 0.5, 0.9, "How big is\nthe animal?", 20)
+    text(ax, 0.3, 0.6, "Does the animal\nhave horns?", 18)
+    
