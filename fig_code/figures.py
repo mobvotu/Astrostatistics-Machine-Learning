@@ -34,3 +34,8 @@ def plot_example_decision_tree():
 
     text(ax, 0.4, 0.75, "> 1m", 12, alpha=0.4)
     text(ax, 0.6, 0.75, "< 1m", 12, alpha=0.4)
+
+    text(ax, 0.21, 0.45, "yes", 12, alpha=0.4)
+    text(ax, 0.34, 0.45, "no", 12, alpha=0.4)
+
+    text(ax, 0.66, 0.45, "y
