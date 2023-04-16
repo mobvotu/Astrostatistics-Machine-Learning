@@ -30,4 +30,7 @@ def plot_example_decision_tree():
     text(ax, 0.12, 0.3, "Are the horns\nlonger than 10cm?", 14)
     text(ax, 0.38, 0.3, "Is the animal\nwearing a collar?", 14)
     text(ax, 0.62, 0.3, "Does the animal\nhave wings?", 14)
-    text(ax, 0.88, 0.3, "Do
+    text(ax, 0.88, 0.3, "Does the animal\nhave a tail?", 14)
+
+    text(ax, 0.4, 0.75, "> 1m", 12, alpha=0.4)
+    text(ax, 0.6, 0.75, "< 1m", 12, alpha=0.4)
