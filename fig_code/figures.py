@@ -26,4 +26,6 @@ def plot_example_decision_tree():
 
     text(ax, 0.5, 0.9, "How big is\nthe animal?", 20)
     text(ax, 0.3, 0.6, "Does the animal\nhave horns?", 18)
-    
+    text(ax, 0.7, 0.6, "Does the animal\nhave two legs?", 18)
+    text(ax, 0.12, 0.3, "Are the horns\nlonger than 10cm?", 14)
+    text(ax, 0.38, 0.3, "Is the
