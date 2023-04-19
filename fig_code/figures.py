@@ -38,4 +38,8 @@ def plot_example_decision_tree():
     text(ax, 0.21, 0.45, "yes", 12, alpha=0.4)
     text(ax, 0.34, 0.45, "no", 12, alpha=0.4)
 
-    text(ax, 0.66, 0.45, "y
+    text(ax, 0.66, 0.45, "yes", 12, alpha=0.4)
+    text(ax, 0.79, 0.45, "no", 12, alpha=0.4)
+
+    ax.plot([0.3, 0.5, 0.7], [0.6, 0.9, 0.6], '-k')
+    ax.plot([0.12
