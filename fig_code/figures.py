@@ -51,4 +51,9 @@ def plot_example_decision_tree():
     ax.axis([0, 1, 0, 1])
 
 
-def visualize_tree(estimat
+def visualize_tree(estimator, X, y, boundaries=True,
+                   xlim=None, ylim=None):
+    estimator.fit(X, y)
+
+    if xlim is None:
+        xlim = (X[:, 0].min() - 0.1,
