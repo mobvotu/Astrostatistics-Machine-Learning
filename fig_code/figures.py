@@ -69,4 +69,8 @@ def visualize_tree(estimator, X, y, boundaries=True,
     # Put the result into a color plot
     Z = Z.reshape(xx.shape)
     plt.figure()
-   
+    plt.pcolormesh(xx, yy, Z, alpha=0.2, cmap='rainbow')
+    plt.clim(y.min(), y.max())
+
+    # Plot also the training points
+    
