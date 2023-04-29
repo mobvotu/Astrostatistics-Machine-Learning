@@ -61,4 +61,7 @@ def visualize_tree(estimator, X, y, boundaries=True,
         ylim = (X[:, 1].min() - 0.1, X[:, 1].max() + 0.1)
 
     x_min, x_max = xlim
- 
+    y_min, y_max = ylim
+    xx, yy = np.meshgrid(np.linspace(x_min, x_max, 100),
+                         np.linspace(y_min, y_max, 100))
+    Z = es
