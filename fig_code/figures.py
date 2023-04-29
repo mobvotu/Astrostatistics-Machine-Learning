@@ -56,4 +56,9 @@ def visualize_tree(estimator, X, y, boundaries=True,
     estimator.fit(X, y)
 
     if xlim is None:
-        xlim = (X[:, 0].min() - 0.1,
+        xlim = (X[:, 0].min() - 0.1, X[:, 0].max() + 0.1)
+    if ylim is None:
+        ylim = (X[:, 1].min() - 0.1, X[:, 1].max() + 0.1)
+
+    x_min, x_max = xlim
+ 
