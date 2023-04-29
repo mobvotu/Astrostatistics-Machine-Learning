@@ -64,4 +64,9 @@ def visualize_tree(estimator, X, y, boundaries=True,
     y_min, y_max = ylim
     xx, yy = np.meshgrid(np.linspace(x_min, x_max, 100),
                          np.linspace(y_min, y_max, 100))
-    Z = es
+    Z = estimator.predict(np.c_[xx.ravel(), yy.ravel()])
+
+    # Put the result into a color plot
+    Z = Z.reshape(xx.shape)
+    plt.figure()
+   
