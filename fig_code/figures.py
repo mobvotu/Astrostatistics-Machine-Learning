@@ -73,4 +73,9 @@ def visualize_tree(estimator, X, y, boundaries=True,
     plt.clim(y.min(), y.max())
 
     # Plot also the training points
-    
+    plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='rainbow')
+    plt.axis('off')
+
+    plt.xlim(x_min, x_max)
+    plt.ylim(y_min, y_max)        
+  
