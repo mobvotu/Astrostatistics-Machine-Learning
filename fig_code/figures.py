@@ -78,4 +78,9 @@ def visualize_tree(estimator, X, y, boundaries=True,
 
     plt.xlim(x_min, x_max)
     plt.ylim(y_min, y_max)        
-  
+    plt.clim(y.min(), y.max())
+    
+    # Plot the decision boundaries
+    def plot_boundaries(i, xlim, ylim):
+        if i < 0:
+            ret
