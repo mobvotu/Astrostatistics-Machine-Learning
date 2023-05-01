@@ -83,4 +83,9 @@ def visualize_tree(estimator, X, y, boundaries=True,
     # Plot the decision boundaries
     def plot_boundaries(i, xlim, ylim):
         if i < 0:
-            ret
+            return
+
+        tree = estimator.tree_
+        
+        if tree.feature[i] == 0:
+            plt.plot([tree.threshold[i], tree.threshold[i]], y
