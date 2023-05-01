@@ -88,4 +88,6 @@ def visualize_tree(estimator, X, y, boundaries=True,
         tree = estimator.tree_
         
         if tree.feature[i] == 0:
-            plt.plot([tree.threshold[i], tree.threshold[i]], y
+            plt.plot([tree.threshold[i], tree.threshold[i]], ylim, '-k')
+            plot_boundaries(tree.children_left[i],
+                            [xlim[0], tree.threshold[i]]
