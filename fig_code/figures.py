@@ -90,4 +90,7 @@ def visualize_tree(estimator, X, y, boundaries=True,
         if tree.feature[i] == 0:
             plt.plot([tree.threshold[i], tree.threshold[i]], ylim, '-k')
             plot_boundaries(tree.children_left[i],
-                            [xlim[0], tree.threshold[i]]
+                            [xlim[0], tree.threshold[i]], ylim)
+            plot_boundaries(tree.children_right[i],
+                            [tree.threshold[i], xlim[1]], ylim)
+     
