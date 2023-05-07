@@ -102,4 +102,8 @@ def visualize_tree(estimator, X, y, boundaries=True,
                             [tree.threshold[i], ylim[1]])
             
     if boundaries:
-        p
+        plot_boundaries(0, plt.xlim(), plt.ylim())
+
+
+def plot_tree_interactive(X, y):
+    from sklearn.tree import DecisionTreeCla
