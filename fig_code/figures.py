@@ -118,4 +118,7 @@ def plot_tree_interactive(X, y):
 
 def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
     from IPython.html.widgets import interact
-    from sklearn.metrics.pairwise import
+    from sklearn.metrics.pairwise import euclidean_distances
+    from sklearn.datasets.samples_generator import make_blobs
+    
+    X, y = make_blobs(n_samples=
