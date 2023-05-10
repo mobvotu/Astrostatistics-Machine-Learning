@@ -110,3 +110,7 @@ def plot_tree_interactive(X, y):
 
     def interactive_tree(depth=1):
         clf = DecisionTreeClassifier(max_depth=depth, random_state=0)
+        visualize_tree(clf, X, y)
+
+    from IPython.html.widgets import interact
+    return interact(interactive_tree, depth=[1, 
