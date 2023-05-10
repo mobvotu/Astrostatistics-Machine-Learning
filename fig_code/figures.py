@@ -106,4 +106,7 @@ def visualize_tree(estimator, X, y, boundaries=True,
 
 
 def plot_tree_interactive(X, y):
-    from sklearn.tree import DecisionTreeCla
+    from sklearn.tree import DecisionTreeClassifier
+
+    def interactive_tree(depth=1):
+        clf = DecisionTreeClassifier(max_depth=depth, random_state=0)
