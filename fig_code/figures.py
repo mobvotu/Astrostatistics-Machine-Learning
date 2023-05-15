@@ -121,4 +121,8 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
     from sklearn.metrics.pairwise import euclidean_distances
     from sklearn.datasets.samples_generator import make_blobs
     
-    X, y = make_blobs(n_samples=
+    X, y = make_blobs(n_samples=300, centers=4,
+                      random_state=0, cluster_std=0.60)
+
+    def _kmeans_step(frame=0, n_clusters=4):
+    
