@@ -125,4 +125,8 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
                       random_state=0, cluster_std=0.60)
 
     def _kmeans_step(frame=0, n_clusters=4):
-    
+        rng = np.random.RandomState(2)
+        labels = np.zeros(X.shape[0])
+        centers = rng.randn(n_clusters, 2)
+
+        ns
