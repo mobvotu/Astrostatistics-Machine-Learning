@@ -129,4 +129,9 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
         labels = np.zeros(X.shape[0])
         centers = rng.randn(n_clusters, 2)
 
-        ns
+        nsteps = frame // 3
+
+        for i in range(nsteps + 1):
+            old_centers = centers
+            if i < nsteps or frame % 3 > 0:
+               
