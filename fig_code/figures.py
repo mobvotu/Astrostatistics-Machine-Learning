@@ -134,4 +134,8 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
         for i in range(nsteps + 1):
             old_centers = centers
             if i < nsteps or frame % 3 > 0:
-               
+                dist = euclidean_distances(X, centers)
+                labels = dist.argmin(1)
+
+            if i < nsteps or frame % 3 > 1:
+      
