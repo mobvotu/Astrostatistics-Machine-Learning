@@ -142,4 +142,9 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
                     warnings.filterwarnings('ignore',
                                             message='Mean of empty slice')
                     centers = np.array([X[labels == j].mean(0)
-                                        for j
+                                        for j in range(n_clusters)])
+                nans = np.isnan(centers)
+                centers[nans] = old_centers[nans]
+
+
+        # plot the dat
