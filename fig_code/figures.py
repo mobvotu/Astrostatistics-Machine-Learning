@@ -138,4 +138,6 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
                 labels = dist.argmin(1)
 
             if i < nsteps or frame % 3 > 1:
-      
+                with warnings.catch_warnings():
+                    warnings.filterwarnings('ignore',
+                                           
