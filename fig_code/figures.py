@@ -140,4 +140,6 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
             if i < nsteps or frame % 3 > 1:
                 with warnings.catch_warnings():
                     warnings.filterwarnings('ignore',
-                                           
+                                            message='Mean of empty slice')
+                    centers = np.array([X[labels == j].mean(0)
+                                        for j
