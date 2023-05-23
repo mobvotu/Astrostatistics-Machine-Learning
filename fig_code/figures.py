@@ -150,4 +150,6 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
         # plot the data and cluster centers
         plt.scatter(X[:, 0], X[:, 1], c=labels, s=50, cmap='rainbow',
                     vmin=0, vmax=n_clusters - 1);
-        p
+        plt.scatter(old_centers[:, 0], old_centers[:, 1], marker='o',
+                    c=np.arange(n_clusters),
+                    s=200, cma
