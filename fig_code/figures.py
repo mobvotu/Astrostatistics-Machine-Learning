@@ -156,4 +156,7 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
         plt.scatter(old_centers[:, 0], old_centers[:, 1], marker='o',
                     c='black', s=50)
 
-        # plot new 
+        # plot new centers if third frame
+        if frame % 3 == 2:
+            for i in range(n_clusters):
+                plt.annotate('', centers[i], old_centers[
