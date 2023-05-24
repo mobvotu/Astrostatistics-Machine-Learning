@@ -162,4 +162,6 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
                 plt.annotate('', centers[i], old_centers[i], 
                              arrowprops=dict(arrowstyle='->', linewidth=1))
             plt.scatter(centers[:, 0], centers[:, 1], marker='o',
-      
+                        c=np.arange(n_clusters),
+                        s=200, cmap='rainbow')
+            plt.sc
