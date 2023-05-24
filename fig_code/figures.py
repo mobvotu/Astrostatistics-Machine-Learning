@@ -164,4 +164,8 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
             plt.scatter(centers[:, 0], centers[:, 1], marker='o',
                         c=np.arange(n_clusters),
                         s=200, cmap='rainbow')
-            plt.sc
+            plt.scatter(centers[:, 0], centers[:, 1], marker='o',
+                        c='black', s=50)
+
+        plt.xlim(-4, 4)
+        plt.ylim
