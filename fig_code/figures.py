@@ -175,4 +175,10 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
                      ha='right', va='top', size=14)
         elif frame % 3 == 2:
             plt.text(3.8, 9.5, "2. Update centroids to cluster means",
-                     ha='right',
+                     ha='right', va='top', size=14)
+
+    return interact(_kmeans_step, frame=[0, 50],
+                    n_clusters=[min_clusters, max_clusters])
+
+
+def 
