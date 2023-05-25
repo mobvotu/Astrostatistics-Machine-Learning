@@ -168,4 +168,8 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
                         c='black', s=50)
 
         plt.xlim(-4, 4)
-        plt.ylim
+        plt.ylim(-2, 10)
+
+        if frame % 3 == 1:
+            plt.text(3.8, 9.5, "1. Reassign points to nearest centroid",
+                     ha='right', va='top', 
