@@ -172,4 +172,7 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
 
         if frame % 3 == 1:
             plt.text(3.8, 9.5, "1. Reassign points to nearest centroid",
-                     ha='right', va='top', 
+                     ha='right', va='top', size=14)
+        elif frame % 3 == 2:
+            plt.text(3.8, 9.5, "2. Update centroids to cluster means",
+                     ha='right',
