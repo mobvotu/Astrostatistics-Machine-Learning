@@ -187,4 +187,9 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
         coefficients = x
         
     if components is None:
-        components = np.e
+        components = np.eye(len(coefficients), len(x))
+        
+    mean = np.zeros_like(x) + mean
+        
+
+    fig = plt.figure(figsize=(1.2 * (5 + n_componen
