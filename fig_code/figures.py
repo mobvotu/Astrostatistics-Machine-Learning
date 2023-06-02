@@ -181,4 +181,5 @@ def plot_kmeans_interactive(min_clusters=1, max_clusters=6):
                     n_clusters=[min_clusters, max_clusters])
 
 
-def 
+def plot_image_components(x, coefficients=None, mean=0, components=None,
+                          imshape=(8, 8), n_components
