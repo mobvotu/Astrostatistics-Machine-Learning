@@ -192,4 +192,8 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
     mean = np.zeros_like(x) + mean
         
 
-    fig = plt.figure(figsize=(1.2 * (5 + n_componen
+    fig = plt.figure(figsize=(1.2 * (5 + n_components), 1.2 * 2))
+    g = plt.GridSpec(2, 5 + n_components, hspace=0.3)
+
+    def show(i, j, x, title=None):
+        ax = fig.add_
