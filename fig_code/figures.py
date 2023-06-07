@@ -196,4 +196,7 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
     g = plt.GridSpec(2, 5 + n_components, hspace=0.3)
 
     def show(i, j, x, title=None):
-        ax = fig.add_
+        ax = fig.add_subplot(g[i, j], xticks=[], yticks=[])
+        ax.imshow(x.reshape(imshape), interpolation='nearest')
+        if title:
+            ax.
