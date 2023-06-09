@@ -204,4 +204,8 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
     show(slice(2), slice(2), x, "True")
 
     approx = mean.copy()
-    show(0, 2, np.zeros_l
+    show(0, 2, np.zeros_like(x) + mean, r'$\mu$')
+    show(1, 2, approx, r'$1 \cdot \mu$')
+
+    for i in range(0, n_components):
+        approx = approx + coefficie
