@@ -199,4 +199,9 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
         ax = fig.add_subplot(g[i, j], xticks=[], yticks=[])
         ax.imshow(x.reshape(imshape), interpolation='nearest')
         if title:
-            ax.
+            ax.set_title(title, fontsize=fontsize)
+
+    show(slice(2), slice(2), x, "True")
+
+    approx = mean.copy()
+    show(0, 2, np.zeros_l
