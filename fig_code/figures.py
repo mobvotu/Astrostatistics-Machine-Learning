@@ -208,4 +208,7 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
     show(1, 2, approx, r'$1 \cdot \mu$')
 
     for i in range(0, n_components):
-        approx = approx + coefficie
+        approx = approx + coefficients[i] * components[i]
+        show(0, i + 3, components[i], r'$c_{0}$'.format(i + 1))
+        show(1, i + 3, approx,
+             r"${0:.2f}
