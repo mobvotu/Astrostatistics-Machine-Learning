@@ -211,4 +211,6 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
         approx = approx + coefficients[i] * components[i]
         show(0, i + 3, components[i], r'$c_{0}$'.format(i + 1))
         show(1, i + 3, approx,
-             r"${0:.2f}
+             r"${0:.2f} \cdot c_{1}$".format(coefficients[i], i + 1))
+        plt.gca().text(0, 1.05, '$+$', ha='right', va='bottom',
+                       transform=plt.gc
