@@ -213,4 +213,9 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
         show(1, i + 3, approx,
              r"${0:.2f} \cdot c_{1}$".format(coefficients[i], i + 1))
         plt.gca().text(0, 1.05, '$+$', ha='right', va='bottom',
-                       transform=plt.gc
+                       transform=plt.gca().transAxes, fontsize=fontsize)
+
+    show(slice(2), slice(-2, None), approx, "Approx")
+
+
+def plot_pca_interactive(data, 
