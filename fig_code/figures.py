@@ -218,4 +218,8 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
     show(slice(2), slice(-2, None), approx, "Approx")
 
 
-def plot_pca_interactive(data, 
+def plot_pca_interactive(data, n_components=6):
+    from sklearn.decomposition import PCA
+    from IPython.html.widgets import interact
+
+    pca = PCA(n
