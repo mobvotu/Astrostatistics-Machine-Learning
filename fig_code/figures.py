@@ -222,4 +222,8 @@ def plot_pca_interactive(data, n_components=6):
     from sklearn.decomposition import PCA
     from IPython.html.widgets import interact
 
-    pca = PCA(n
+    pca = PCA(n_components=n_components)
+    Xproj = pca.fit_transform(data)
+
+    def show_decomp(i=0):
+        plot_image_components(data[i], Xproj[i
