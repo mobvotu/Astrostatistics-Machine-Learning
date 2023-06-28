@@ -226,4 +226,7 @@ def plot_pca_interactive(data, n_components=6):
     Xproj = pca.fit_transform(data)
 
     def show_decomp(i=0):
-        plot_image_components(data[i], Xproj[i
+        plot_image_components(data[i], Xproj[i],
+                              pca.mean_, pca.components_)
+    
+    interact(show_decomp, i=(0, data.shape[0] - 1));
