@@ -8,4 +8,5 @@ import numpy as np
 from matplotlib.colors import ListedColormap
 
 # Create color maps for 3-class classification problem, as with iris
-cmap_lig
+cmap_light = ListedColormap(['#FFAAAA', '#AAFFAA', '#AAAAFF'])
+cmap_bold = ListedColormap(['#FF0000', '#0
