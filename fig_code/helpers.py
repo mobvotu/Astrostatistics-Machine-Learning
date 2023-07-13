@@ -50,4 +50,6 @@ def plot_polynomial_regression():
     pl.figure()
     pl.scatter(x, y, s=4)
 
-    X
+    X = np.array([x**i for i in range(5)]).T
+    X_test = np.array([x_test**i for i in range(5)]).T
+    regr = linear_model.LinearRegressi
