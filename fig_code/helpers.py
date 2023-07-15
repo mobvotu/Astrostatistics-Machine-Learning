@@ -57,4 +57,7 @@ def plot_polynomial_regression():
     pl.plot(x_test, regr.predict(X_test), label='4th order')
 
     X = np.array([x**i for i in range(10)]).T
-    X_test
+    X_test = np.array([x_test**i for i in range(10)]).T
+    regr = linear_model.LinearRegression()
+    regr.fit(X, y)
+    pl.plot
