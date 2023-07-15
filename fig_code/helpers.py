@@ -60,4 +60,8 @@ def plot_polynomial_regression():
     X_test = np.array([x_test**i for i in range(10)]).T
     regr = linear_model.LinearRegression()
     regr.fit(X, y)
-    pl.plot
+    pl.plot(x_test, regr.predict(X_test), label='9th order')
+
+    pl.legend(loc='best')
+    pl.axis('tight')
+    pl.title('Fitting a 4th and a 9
