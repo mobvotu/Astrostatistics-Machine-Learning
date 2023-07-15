@@ -69,4 +69,7 @@ def plot_polynomial_regression():
     pl.figure()
     pl.scatter(x, y, s=4)
     pl.plot(x_test, f(x_test), label="truth")
-    pl.axis('tigh
+    pl.axis('tight')
+    pl.title('Ground truth (9th order polynomial)')
+
+
