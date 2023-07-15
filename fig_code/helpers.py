@@ -64,4 +64,9 @@ def plot_polynomial_regression():
 
     pl.legend(loc='best')
     pl.axis('tight')
-    pl.title('Fitting a 4th and a 9
+    pl.title('Fitting a 4th and a 9th order polynomial')
+
+    pl.figure()
+    pl.scatter(x, y, s=4)
+    pl.plot(x_test, f(x_test), label="truth")
+    pl.axis('tigh
