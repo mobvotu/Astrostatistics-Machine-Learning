@@ -12,4 +12,8 @@ def plot_kmeans():
 
     fig, ax = plt.subplots(1, 2, figsize=(12, 6))
 
-    ax[0].scatter(X[:
+    ax[0].scatter(X[:, 0], X[:, 1])
+    ax[0].set_title('Input')
+
+    ax[1].scatter(X[:, 0], X[:, 1], c=y)
+    ax[1].set_title('Labels determined by K M
